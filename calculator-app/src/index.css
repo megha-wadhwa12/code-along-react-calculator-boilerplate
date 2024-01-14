@@ -32,24 +32,23 @@ input{
   border-radius: 5px;
 }
 
-.buttons{
+ 
+ 
+ 
+.equals-button {
+  grid-column: span 3;  
+}
+
+
+.gridStyle {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);  
+  gap: 0.5rem;  
+  width: 100%; 
 }
-
-.all_buttons{
+.buttonStyling {
+  padding: 0.5rem; 
+  background-color: white;
+  border-radius: 0.25rem; 
   width: 100%;
-  height: 4vw;
-  font-size: 1.2rem;
-  cursor: pointer;
-  background-color: #f0f0f0;
-  color: #242424;
-  border: none;
-  border-radius: 2px;
-  transition: background-color 0.3s ease-in;
-}
-
-.all_buttons:hover{
-  background-color: rgb(228, 208, 208);
 }

@@ -1,16 +1,10 @@
-import React from "react";
-
-const Button = ({ value, onClick, style }) => {
-  console.log("Value: ", value);
-  console.log("onClick:", onClick);
-  console.log("style:", style);
+const Button = ({ value, onClick }) => {
+  const buttonClass = value === "=" ? "equals-button" : "";
 
   return (
-    <div>
-      <button className="all_buttons" onClick={onClick} style={value === "=" ? {gridColumn: "span 3"}: {gridColumn: "span 1"}}>
-        {value}
-      </button>
-    </div>
+    <button className={`buttonStyling ${buttonClass}`} onClick={onClick}>
+      {value}
+    </button>
   );
 };
 export default Button;
