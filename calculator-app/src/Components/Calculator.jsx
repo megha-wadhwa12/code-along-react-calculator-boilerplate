@@ -48,7 +48,7 @@ const Calculator = () => {
          return <Button value={e} onClick={()=>{
             e=== "="? calculateResult():e==="AC"? clearInput():e==="DEL"? deleteLast() : handleInput(e)
           }}
-          // style={e === "="? {gridColumn: "span 3"}: {}}
+          style={e === "="? {gridColumn: "span 3"}: {}}
            />
 
           })}

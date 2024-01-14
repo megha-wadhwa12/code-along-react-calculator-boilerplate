@@ -7,7 +7,7 @@ const Button = ({ value, onClick, style }) => {
 
   return (
     <div>
-      <button className="all_buttons" onClick={onClick} style={value === "=" ? {gridColumn: "span 3"}: {gridColumn: "span 1"}}>
+      <button className="all_buttons" onClick={onClick} style={style}>
         {value}
       </button>
     </div>
